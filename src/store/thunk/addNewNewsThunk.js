@@ -17,7 +17,6 @@ export const addNewNewsThunkCreator = () => {
                 dispatch(addNews(result.response.results))
             })
             .catch(err => {
-                console.error('error heheheh')
                 dispatch(errorAddNewsAction())
             })
 
